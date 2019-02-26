@@ -27,7 +27,7 @@ namespace MonstersEveryWhere
                 {
                     return AttackTypes[AttackType.Biting];
                 }
-                throw new NotSupportedException("This monster cannot bite.");
+                throw new InvalidOperationException("This monster cannot bite.");
             }
         }
 
@@ -39,7 +39,7 @@ namespace MonstersEveryWhere
                 {
                     return AttackTypes[AttackType.Kicking];
                 }
-                throw new NotSupportedException("This monster cannot kick.");
+                throw new InvalidOperationException("This monster cannot kick.");
             }
         }
 
@@ -51,7 +51,7 @@ namespace MonstersEveryWhere
                 {
                     return AttackTypes[AttackType.Punching];
                 }
-                throw new NotSupportedException("This monster cannot punch.");
+                throw new InvalidOperationException("This monster cannot punch.");
             }
         }
 
@@ -63,7 +63,7 @@ namespace MonstersEveryWhere
                 {
                     return AttackTypes[AttackType.Spitting];
                 }
-                throw new NotSupportedException("This monster cannot spit.");
+                throw new InvalidOperationException("This monster cannot spit.");
             }
         }
 
@@ -75,7 +75,7 @@ namespace MonstersEveryWhere
                 {
                     return AttackTypes[AttackType.Tackling];
                 }
-                throw new NotSupportedException("This monster cannot tackle.");
+                throw new InvalidOperationException("This monster cannot tackle.");
             }
         }
 
